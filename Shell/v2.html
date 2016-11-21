@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Shell Rimula</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta name="viewport" content="width=device-width"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta content="telephone=no" name="format-detection">
+
+
+</head>
+<style type="text/css">
+
+
+/* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+     table td { border-collapse: collapse; mso-table-lspace:0pt;mso-table-rspace:0pt;}    
+     table {border-collapse: collapse; mso-table-lspace:0pt;mso-table-rspace:0pt;}
+    .collapse { margin:0; padding:0; }
+
+    [class~=mobbr], [class~=mobbr] * { display: none !important; }
+
+     p { margin: 0; padding: 0; margin-bottom: 0; }
+     a, a:link, a:visited { color: #000105; }
+
+
+     /* Apple detectors */
+
+     a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+     }
+
+
+
+     /* HOVER TEXT DECORATION */
+     a:hover.textfff {text-decoration:underline !important; color:#cecece !important;}
+
+
+
+     /* FONTS */
+	@media screen {
+		
+  @font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+		
+  @font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v11/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(http://fonts.gstatic.com/s/lato/v11/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2'), url(http://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}		
+		
+		
+		
+
+}
+
+ /* MOBILE STYLES */
+
+@media only screen and (max-device-width: 480px),
+only screen and (-webkit-min-device-pixel-ratio: 2.1), only screen and (max-width: 480px){
+    
+html { -webkit-text-size-adjust: none!important; }
+
+table[class~=mob_mainouterzone], td[class~=mob_mainouterzone] { max-width: 600px !important; width: 100% !important; }
+
+img[class~=mob_editable] { height: auto !important; max-width: 600px !important; width: 100% !important; }
+[class~=mob_editable] { width: 100% !important; height: auto !important; }
+
+[class~=hide], [class~=hide] * { display: none !important; }
+
+div[class~=mob_display], div[class~=mob_display] * { display: block !important; width: 100% !important; height:auto!important; font-size: 0; margin:0 auto!important; text-align:left !important; display:inline; }
+
+
+
+td[class~=mob_mainpad] {padding:20px 20px 0px 20px !important; background-image:none !important; }
+	 
+td[class~=mob_toppad] { padding:20px 0px 0px 0px !important; }
+td[class~=mob_toppad2] { padding:10px 0px 0px 0px !important;}
+td[class~=mob_bottompad] { padding:0px 0px 35px 0px !important;}
+td[class~=mob_bottompad10] { padding:0px 0px 10px 0px !important;}
+
+td[class~=mob_nopad] { padding:0px 0px 0px 0px !important;}
+td[class~=mob_footpad] { padding:20px 0px 20px 0px !important;}
+td[class~=mob_sidepad] { padding:30px 20px 0px 20px !important; }
+
+
+td[class~=mob_copy] { padding:0px 0px 35px 0px !important; font-family: Arial, sans-serif !important; font-size:18px !important; text-align:left !important; line-height:26px !important; color:#000000 !important; font-weight:normal !important;}
+
+table[class~=mob_width] { width: 100% !important; }
+table[class~=mob_width_header] { width: 100% !important; text-align: center !important;}
+
+td[class="min_width"] { min-width: 100% !important; height:0 !important; }
+
+td[class="min_width_height"] { min-width: 100% !important; padding:20px 0px 35px 0px  }	
+
+td[class~=mob_copy1] { padding:0px 0px 20px 0px !important;  font-size:14px !important; text-align:left !important; line-height:18px !important; color:#58595b !important; font-weight:normal !important;}
+ 
+td[class~=mob_copy2] { padding:35px 0px 20px 0px !important;  font-size:20px !important; text-align:left !important; line-height:23px !important; color:#DD1D21 !important; font-weight:normal !important;}
+
+td[class~=mob_copy3] { padding:0px 0px 20px 0px !important; font-size:14px !important; text-align:left !important; line-height:18px !important; color:#58595b !important; font-weight:bold !important;}
+
+
+}
+
+</style>
+
+
+<body bgcolor="#595959" style="background-color:#595959">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0"   >
+ <tr>
+  <td align="center" >
+
+  
+  
+    <!--OPEN PREHEADER STUFF-->
+      <table width="600" border="0" cellspacing="0" cellpadding="0" class="mob_mainouterzone"   bgcolor="#FFFFFF" >
+        <tr>
+      
+
+
+             <td align="center" bgcolor="#FFFFFF">
+                  <!--viewonline and unsub-->
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                       <tr>
+                         <td width="600" valign="top" align="left" class="min_width" style=" padding: 12px 0px 10px 0px; min-width:600px; ">
+                           <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                              <tr>
+                                 <td align="left" style="font-family: Helvetica, Arial, sans-serif; color:#999999; font-size:10px; line-height:11px; text-align:center;"><a class="textfff" href="#" title="View Online" target="_blank" style="text-decoration:none; color:#999999;">Display images</a></td>
+                              </tr>
+                            </table>
+                         </td>
+                      </tr>
+                   </table>
+				  <!--viewonline and unsub-->
+             </td>
+         
+
+   </tr>
+</table>
+<!--CLOSE PREHEADER STUFF-->
+  
+  
+  
+  <!--OPEN MAIN CONTENT-->
+    <table width="600" border="0" cellspacing="0" cellpadding="0" class="mob_mainouterzone" bgcolor="#ffffff">
+      <tr>
+      
+  <!--spacer FOR OUTLOOK 2013 FIX-->
+<td bgcolor="#ffffff" width="20" ><table border="0" cellspacing="0" cellpadding="0" width="20"><tr><td width="20" align="center" valign="top" style="width:20px; "></td></tr></table></td>
+<!--spacer FOR OUTLOOK 2013 FIX-->
+
+           <td align="center" bgcolor="#ffffff">
+           
+			   
+
+			   <!--HEADER-->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="hide">
+               <tr>
+                 <td bgcolor="#ffffff" class="min_width" width="560" style="min-width:560px; padding: 20px 0px 35px 0px;"><img src="images/header.jpg" border="0" width="560" height="350" alt="CONGRATULATIONS, YOU'VE WON! HE'S REACHED HIS DESTINATION AND NOW YOU CAN TOO." style="display:block; color:#000000; font-size: 20px; text-transform:uppercase; font-family: Helvetica, Arial, sans-serif; font-size:16px; font-weight: 300; width:560px; height:250px;" class="mob_editable" />
+                 </td>
+               </tr>
+              </table>
+              <!--HEADER-->
+
+<!--MOBILE HEADER-->
+			    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mob_width">
+			      <tr>
+                   <td class="mob_toppad" align="center" valign="top" bgcolor="#ffffff" style="font-family: Helvetica, Arial, sans-serif; font-size:16px;color:#000000; font-weight:normal;"><div class="mob_display" style="display:none;"><a href="" target="_blank"><img src="images/header.jpg" width="0" height="0" border="0" style="display:block; color:#000000; font-family: Helvetica, Arial, sans-serif; font-size:16px; font-weight:300; text-transform:uppercase;" alt="" /></div>
+                  </td>
+                </tr>
+               </table>
+			   <!--MOBILE HEADER-->
+              <!--COPY STARTS-->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                <tr>
+                  <td bgcolor="#ffffff" width="560" valign="top" >
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                       <tr>
+                         <td width="560" valign="top" align="left" class="min_width" style=" padding: 0px 0px 0px 0px; min-width:560px; ">
+                           <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                              <tr>
+                                 <td class="mob_copy2" valign="top" style="font-family: 'Helvetica', Arial, sans-serif; font-size:20px; text-align:left; line-height:23px; color:#DD1D21; padding: 0px 10px 20px 0px; font-weight:400; font-style: normal;" align="left" >Thanks so much for helping us celebrate the launch of our Real Destinations Campaign by Shell Rimula.</td>
+                              </tr>
+                              <tr>
+                                 <td class="mob_copy1" valign="top" style="font-family:'Helvetica', Arial, sans-serif; font-size:13px; text-align:left; line-height:19px; color:#58595b; padding: 0px 10px 20px 0px; font-weight:normal;" align="left" >Your destinations, or goal has come out on top and we're going to reward you with £xxx worth of vouchers towards making it happen. We will be in touch shortly to arrange how you can collect your prize.</td>
+                              </tr>
+                              
+                            
+                               
+                           </table>
+                         </td>
+                      </tr>
+                   </table>
+				 </td>
+              </tr>
+            </table>
+             <!--COPY ENDS-->
+             
+            
+             
+             
+
+             
+              <!--FOOTER-->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="hide">
+               <tr>
+                 <td bgcolor="#ffffff" class="min_width" width="560" style="min-width:560px; padding: 0px 0px 0px 0px;"><a href="" style="color:#000000;" title="" target="_blank"><img src="images/footer_07.png" border="0" width="560" height="350" alt="" style="display:block; color:#000000; font-size: 20px; text-transform:uppercase; font-family: Helvetica, Arial, sans-serif; font-size:16px; font-weight: 300; width:560px; height:93px;" class="mob_editable" /></a>
+                 </td>
+               </tr>
+              </table>
+              <!--FOOTER-->
+             
+             <!--FOOTER MOBILE-->
+             
+             <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+<tr><td align="center" valign="top" style="font-family:'Noto Serif', 'Georgia', Times New Roman, serif; font-size:16px;color:#000105; font-weight:bold;"><div class="mob_display" style="display:none;"><a href="http://po.st/bKXZhL"  title="" target="_blank"><img src="images/footer_mobile.png" width="0" height="0" alt="" border="0" style="display:block; width:0px; height:0px;" class="mob_editable"/></a></div></td></tr>
+</table>
+             
+             <!--FOOTER MOBILE-->
+             
+		</td>
+         
+<!--spacer FOR OUTLOOK 2013 FIX-->
+<td width="20" bgcolor="#ffffff" ><table border="0" cellspacing="0" cellpadding="0" width="20"><tr><td width="20" align="center" valign="top" style="width:20px; "></td></tr></table></td>
+<!--spacer FOR OUTLOOK 2013 FIX-->
+
+   </tr>
+</table>
+<!--CLOSE MAIN CONTENT-->
+
+
+
+    <!--OPEN FOOTER STUFF-->
+      <table width="600" border="0" cellspacing="0" cellpadding="0" class="mob_mainouterzone" bgcolor="#000000">
+        <tr>
+      
+
+
+             <td align="center" bgcolor="#FFFFFF">
+                  <!--viewonline and unsub-->
+                     <table width="100%" border="0" cellspacing="0" cellpadding="0" >
+                       <tr>
+                         <td width="600" valign="top" align="left" class="min_width" style=" padding: 12px 0px 10px 0px; min-width:600px; ">
+                           <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                              <tr>
+                                 <td align="left" style="font-family: Helvetica, Arial, sans-serif; color:#999999; font-size:10px; line-height:11px; text-align:center;"><a  href="#" title="Unsubscribe" target="_blank" style="text-decoration:none; color:#999999;">Unsubscribe</a></td>
+                              </tr>
+                            </table>
+                         </td>
+                      </tr>
+                   </table>
+				  <!--viewonline and unsub-->
+             </td>
+         
+
+   </tr>
+</table>
+<!--CLOSE FOOTER STUFF-->
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>
